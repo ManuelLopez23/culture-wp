@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <script src="pagina.js"></script>
+    <head> 
+        <title>The Culture</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/pagina.css">
+
+    </head>
+    
+    <body>
+        <div class="wstitle">
+            <h1><em>The Culture</em></h1>
+            <h4>The Way We Choose to Live.</h4>
+        </div>     
+        <ul>
+                <li><a class="active" href="#Inicio">Home</a></li>
+                <div class="dropdown">
+                        <li class="drop" href="#Trend" ><a>Trends</a></li>
+                        <div class="dropdown-content">
+                          <a  href="#">Anticipated Albums 2019</a>
+                          <a  href="#">Upcoming Artists</a>
+                          <a  href="#">Underground</a>
+                        </div>
+                </div>
+            <li><a href="https://www.billboard.com/charts/hot-100" target="_blank">Billboard Top 100</a></li>
+            <li><a href="#albums">Top 10 Albums of 2018</a></li>
+        </ul>
+        
+        
+        <div class="background">
+                <p>Soul Starts Here.</p>
+        </div>
+        <h3 id="tabletitle">Essentials</h3>
+        <div id="info">
+            <h3 id="infoh"></h3>
+            <p id="infop">Click Artist in Charts for Information.</p>
+        </div>
+        <div class="songs">
+        <div class="albumblock">
+            <iframe id="album" src="https://open.spotify.com/embed/album/7viNUmZZ8ztn2UB4XB3jIL" width="300" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="mediaplayer">
+              <iframe  id="audio" src="https://open.spotify.com/embed/track/62vpWI1CHwFy7tMIcSStl8" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+         </div>
+         
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Album</th>
+                    <th>Year</th>
+                </tr>
+                <tr class="song" >
+                   <td onclick="audio1()">No Role Modelz</td> 
+                   <td onclick="info1()">J. Cole</td>
+                   <td onclick="album1()">2014 Forest Hills Drive</td>
+                   <td onclick="audio1(),info1(),album1()">2014</td>
+                </tr>
+                <tr class="song" >
+                   <td onclick="audio2()">Sweatpants</td> 
+                   <td onclick="info2()">Childish Gambino</td>
+                   <td onclick="album2()">Because the Internet</td>
+                   <td onclick="audio2(),info2(),album2()">2013</td>
+                </tr>
+                <tr class="song" >
+                   <td onclick="audio3()">Norf Norf</td> 
+                   <td onclick="info3()">Vince Staples</td>
+                   <td onclick="album3()">Summertime '06</td>
+                   <td onclick="audio3(),info3(),album3()">2015</td>
+                </tr>
+                <tr class="song" >
+                   <td onclick="audio4()">90210</td> 
+                   <td onclick="info4()">Travis Scott</td>
+                   <td onclick="album4()">Rodeo</td>
+                   <td onclick="audio4(),info4(),album4()">2015</td>
+                </tr>
+                <tr class="song" >
+                    <td onclick="audio5()">January 28th</td> 
+                    <td onclick="info1()">J. Cole</td>
+                    <td onclick="album1()">2014 Forest Hills Drive</td>
+                    <td onclick="audio5(),info1(),album1()">2014</td>
+                </tr>
+                <tr class="song" >
+                    <td onclick="audio6()">Paramedic!</td> 
+                    <td onclick="info5()">SOB X RBE</td>
+                    <td onclick="album5()">Black Panther</td>
+                    <td onclick="audio6(),info5(),album5()">2018</td>
+                 </tr>
+                 <tr class="song" >
+                    <td onclick="audio7()">COFFEE BEAN</td> 
+                    <td onclick="info4()">Travis Scott</td>
+                    <td onclick="album6()">Astroworld</td>
+                    <td onclick="audio7(),info4(),album6()">2018</td>
+                 </tr>
+                 <tr class="song" >
+                    <td onclick="audio8()">HOUSTONFORNICATION</td> 
+                    <td onclick="info4()">Travis Scott</td>
+                    <td onclick="album6()">Astroworld</td>
+                    <td onclick="audio8(),info4(),album6()">2018</td>
+                 </tr>
+                 <tr class="song" >
+                    <td onclick="audio9()">Weekend(feat.Miguel)</td> 
+                    <td onclick="info6()">Mac Miller</td>
+                    <td onclick="album7()">GO:OD AM</td>
+                    <td onclick="audio9(),info6(),album7()">2015</td>
+                 </tr>
+                 <tr class="song"  >
+                    <td onclick="audio10()">Nights</td> 
+                    <td onclick="info7()">Frank Ocean</td>
+                    <td onclick="album8()">Blond</td>
+                    <td onclick="audio10(),info7(),album8()">2016</td>
+                 </tr>
+                 <tr class="song" >
+                    <td onclick="audio11()">Ville Mentality</td> 
+                    <td onclick="info1()">J. Cole</td>
+                    <td onclick="album9()">4 Your Eyez Only</td>
+                    <td onclick="audio11(),info1(),album9()">2016</td>
+                 </tr>
+            </table>
+        </div>
+        <div class="video">
+            <h3 id="videotitle">Bangers</h3>       
+             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/BtZ6hmT5_I0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h2 id="gallery">Greatest of All Time:</h2>
+        <div class="gallery" onclick="videoA()" >
+            <img src="img/rocky2.jpg" alt="A$AP Rocky" >
+            <div class="desc">A$AP Rocky</div>
+        </div>
+        <div class="gallery" onclick="videoJM()" >
+                <img src="img/john mayer.jpg" alt="John Mayer" >
+                <div class="desc">John Mayer</div> 
+        </div>
+        <div class="gallery" onclick="videoFO()" >
+                <img src="img/frankocean.jpg" alt="Frank Ocean Mid Concert" >
+                <div class="desc">Frank Ocean</div>
+        </div>
+        <div class="gallery" onclick="videoJC()">
+                <img src="img/jcole.jpg" alt="J.Cole">
+                <div class="desc">J.Cole</div>
+        </div>
+        <div class="gallery" onclick="videoTS()">
+                <img src="img/travis2.jpg" alt="Travis Scott" >
+                <div class="desc">Travis Scott</div>
+        </div>
+    </body>
+    
+    
+</html>
